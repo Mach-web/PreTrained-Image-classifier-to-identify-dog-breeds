@@ -43,7 +43,7 @@ def get_pet_labels(image_dir):
     img_labels = listdir(image_dir)
     results_dic = dict()
     for images in img_labels:
-        if images[0] == "0":
+        if images[0] == ".":
             continue
         elif len(images.split("_")) == 2:
             label = [" ".join(images.strip().lower().split("_")[:1])]
