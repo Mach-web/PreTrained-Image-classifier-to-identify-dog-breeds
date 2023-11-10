@@ -311,8 +311,8 @@ PetLabelDog: 0  ClassLabelDog: 0
 # Total Images 40 # Matches: 30 # NOT Matches: 10
 
  ** Statistics from calculates_results_stats() function:
-N Images: 40  N Dog Images: 40  N NotDog Images:  0 
-Pct Corr dog:  75.0 Pct Corr NOTdog:   0.0  Pct Corr Breed: 100.0
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -321,13 +321,13 @@ Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  80.0
 
 *** Results Summary for CNN Model Architecture ALEXNET ***
 N Images            :  40
-N Dog Images        :  40
-N Not-Dog Images:   0
+N Dog Images        :  30
+N Not-Dog Images:  10
  
 pct_match : 75.000000
-pct_correct_dogs : 75.000000
-pct_correct_breed : 100.000000
-pct_correct_notdogs : 0.000000
+pct_correct_dogs : 100.000000
+pct_correct_breed : 80.000000
+pct_correct_notdogs : 100.000000
 
 INCORRECT Dog Breed Assignment:
 Real:                     beagle   Classifier:               english foxhound

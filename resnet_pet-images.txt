@@ -311,8 +311,8 @@ PetLabelDog: 0  ClassLabelDog: 0
 # Total Images 40 # Matches: 33 # NOT Matches: 7
 
  ** Statistics from calculates_results_stats() function:
-N Images: 40  N Dog Images: 40  N NotDog Images:  0 
-Pct Corr dog:  75.0 Pct Corr NOTdog:   0.0  Pct Corr Breed:  97.5
+N Images: 40  N Dog Images: 30  N NotDog Images: 10 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
 
  ** Check Statistics - calculated from this function as a check:
 N Images: 40  N Dog Images: 30  N NotDog Images: 10 
@@ -321,13 +321,13 @@ Pct Corr dog: 100.0 Pct Corr NOTdog:  90.0  Pct Corr Breed:  90.0
 
 *** Results Summary for CNN Model Architecture RESNET ***
 N Images            :  40
-N Dog Images        :  40
-N Not-Dog Images:   0
+N Dog Images        :  30
+N Not-Dog Images:  10
  
 pct_match : 82.500000
-pct_correct_dogs : 75.000000
-pct_correct_breed : 97.500000
-pct_correct_notdogs : 0.000000
+pct_correct_dogs : 100.000000
+pct_correct_breed : 90.000000
+pct_correct_notdogs : 90.000000
 
 INCORRECT Dog/NOT Dog Assignments:
 0 is a mismatch to 1
@@ -337,4 +337,4 @@ Real:             great pyrenees   Classifier:                         kuvasz
 Real:           golden retriever   Classifier:                       leonberg
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:0:12
+** Total Elapsed Runtime: 0:0:19
