@@ -42,7 +42,7 @@ def get_input_args():
     # Create Parse using ArgumentParser
     parser = argparse.ArgumentParser()
 
-    parser.add_argument('--dir', type = str, default='pet_names/',
+    parser.add_argument('--dir', type = str, default='pet_images/',
                             help='Enter path to image folder')   
     parser.add_argument('--arch', type = str, default = 'vgg',
                         help='Expects CNN Model Architecture')
