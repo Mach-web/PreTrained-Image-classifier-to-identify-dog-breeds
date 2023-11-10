@@ -337,4 +337,4 @@ Real:             boston terrier   Classifier:                        basenji
 Real:           golden retriever   Classifier:           afghan hound, afghan
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:0:10
+** Total Elapsed Runtime: 0:0:7

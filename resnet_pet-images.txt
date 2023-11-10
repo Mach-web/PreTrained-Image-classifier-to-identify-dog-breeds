@@ -330,11 +330,11 @@ pct_correct_breed : 90.000000
 pct_correct_notdogs : 90.000000
 
 INCORRECT Dog/NOT Dog Assignments:
-0 is a mismatch to 1
+Pet Image Label: cat is a mismatch to Classifier Label: norwegian elkhound, elkhound
 
 INCORRECT Dog Breed Assignment:
 Real:             great pyrenees   Classifier:                         kuvasz
 Real:           golden retriever   Classifier:                       leonberg
 Real:                     beagle   Classifier:  walker hound, walker foxhound
 
-** Total Elapsed Runtime: 0:0:19
+** Total Elapsed Runtime: 0:0:20

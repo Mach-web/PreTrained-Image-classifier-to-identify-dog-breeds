@@ -5,24 +5,14 @@ Command Line Arguments:
     arch = alexnet 
  dogfile = dognames.txt
 
-Pet Image Label Dictionary has 8 key-value pairs.
-Below are 8 of them:
- 1 key:                     dog_02.jpg  label:                        dog
- 2 key:                     Cup_01.jpg  label:                        cup
- 3 key:                     dog_01.jpg  label:                        dog
- 4 key:              Black_bear_01.jpg  label:                 black bear
- 5 key:                     Dog_01.jpg  label:                        dog
- 6 key:                     cat_01.jpg  label:                        cat
- 7 key:                     Dog_02.jpg  label:                        dog
- 8 key:                building_01.jpg  label:                   building
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                     dog_04.jpg  label:                        dog
+ 2 key:                     cat_01.jpg  label:                        cat
+ 3 key:                     dog_03.jpg  label:                        dog
+ 4 key:                building_01.jpg  label:                   building
 
      MATCH:
-
-                    Cup_01.jpg: 
-Real:                        cup   Classifier:                            cup
-
-                    Dog_01.jpg: 
-Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian
 
                     cat_01.jpg: 
 Real:                        cat   Classifier:              egyptian cat, cat
@@ -32,29 +22,15 @@ Real:                   building   Classifier:        church, church building
 
  NOT A MATCH:
 
-                    dog_02.jpg: 
+                    dog_04.jpg: 
 Real:                        dog   Classifier:    soft-coated wheaten terrier
 
-                    dog_01.jpg: 
+                    dog_03.jpg: 
 Real:                        dog   Classifier:    soft-coated wheaten terrier
 
-             Black_bear_01.jpg: 
-Real:                 black bear   Classifier: sloth bear, melursus ursinus, ursus ursinus
-
-                    Dog_02.jpg: 
-Real:                        dog   Classifier: frilled lizard, chlamydosaurus kingi
-
-# Total Images 8 # Matches: 4 # NOT Matches: 4
+# Total Images 4 # Matches: 2 # NOT Matches: 2
 
      MATCH:
-
-                    Cup_01.jpg: 
-Real:                        cup   Classifier:                            cup  
-PetLabelDog: 0  ClassLabelDog: 0
-
-                    Dog_01.jpg: 
-Real:                        dog   Classifier: german shepherd, german shepherd dog, german police dog, alsatian  
-PetLabelDog: 1  ClassLabelDog: 1
 
                     cat_01.jpg: 
 Real:                        cat   Classifier:              egyptian cat, cat  
@@ -66,48 +42,37 @@ PetLabelDog: 0  ClassLabelDog: 0
 
  NOT A MATCH:
 
-                    dog_02.jpg: 
+                    dog_04.jpg: 
 Real:                        dog   Classifier:    soft-coated wheaten terrier  
 PetLabelDog: 1  ClassLabelDog: 1
 
-                    dog_01.jpg: 
+                    dog_03.jpg: 
 Real:                        dog   Classifier:    soft-coated wheaten terrier  
 PetLabelDog: 1  ClassLabelDog: 1
 
-             Black_bear_01.jpg: 
-Real:                 black bear   Classifier: sloth bear, melursus ursinus, ursus ursinus  
-PetLabelDog: 0  ClassLabelDog: 0
-
-                    Dog_02.jpg: 
-Real:                        dog   Classifier: frilled lizard, chlamydosaurus kingi  
-PetLabelDog: 1  ClassLabelDog: 0
-
-# Total Images 8 # Matches: 4 # NOT Matches: 4
+# Total Images 4 # Matches: 2 # NOT Matches: 2
 
  ** Statistics from calculates_results_stats() function:
-N Images:  8  N Dog Images:  8  N NotDog Images:  0 
-Pct Corr dog:  37.5 Pct Corr NOTdog:   0.0  Pct Corr Breed:  87.5
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
  ** Check Statistics - calculated from this function as a check:
-N Images:  8  N Dog Images:  4  N NotDog Images:  4 
-Pct Corr dog:  75.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  25.0
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
 
 
 *** Results Summary for CNN Model Architecture ALEXNET ***
-N Images            :   8
-N Dog Images        :   8
-N Not-Dog Images:   0
+N Images            :   4
+N Dog Images        :   2
+N Not-Dog Images:   2
  
 pct_match : 50.000000
-pct_correct_dogs : 37.500000
-pct_correct_breed : 87.500000
-pct_correct_notdogs : 0.000000
-
-INCORRECT Dog/NOT Dog Assignments:
-1 is a mismatch to 0
+pct_correct_dogs : 100.000000
+pct_correct_breed : 0.000000
+pct_correct_notdogs : 100.000000
 
 INCORRECT Dog Breed Assignment:
 Real:                        dog   Classifier:    soft-coated wheaten terrier
 Real:                        dog   Classifier:    soft-coated wheaten terrier
 
-** Total Elapsed Runtime: 0:0:7
+** Total Elapsed Runtime: 0:0:5
