@@ -74,7 +74,7 @@ def adjust_results4_isadog(results_dic, dogfile):
         while line != "":
             line = line.strip()
             if line not in dognames_dic:
-                dognames_dic['line'] = [1]
+                dognames_dic[line] = [1]
             line = f.readline()
     
     for key in results_dic:
