@@ -293,10 +293,25 @@ def check_calculating_results(results_dic, results_stats_dic):
                     
         # calculates statistics based upon counters from above
         n_pet_notd = n_images - n_pet_dog
+        # try:
         pct_corr_dog = ( n_class_cdog / n_pet_dog )*100
+        '''except ZeroDivisionError as e:
+            pct_corr_dog = ( n_class_cdog / (n_pet_dog + 1))*100
+            pct_corr_dog = 0
+            print(f"Error: {e}")
+        try:'''
         pct_corr_notdog = ( n_class_cnotd / n_pet_notd )*100
+        '''
+        except ZeroDivisionError as e:
+            pct_corr_notdog = ( n_class_cnotd / (n_pet_notd + 1))*100
+            print(f"Error: {e}")
+        try:'''
         pct_corr_breed = ( n_match_breed / n_pet_dog )*100
-    
+        '''
+        except ZeroDivisionError as e:
+            pct_corr_breed = ( n_match_breed / (n_pet_dog + 1))*100
+            print(f"Error: {e}")
+        '''
         # prints calculated statistics
         print("\n ** Statistics from calculates_results_stats() function:")
         print("N Images: {:2d}  N Dog Images: {:2d}  N NotDog Images: {:2d} \nPct Corr dog: {:5.1f} Pct Corr NOTdog: {:5.1f}  Pct Corr Breed: {:5.1f}".format(

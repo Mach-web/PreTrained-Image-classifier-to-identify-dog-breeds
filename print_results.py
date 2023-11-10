@@ -63,7 +63,7 @@ def print_results(results_dic, results_stats_dic, model,
            None - simply printing results.
     """    
     # Prints summary statistics over the run
-    print("\n\n*** Results Summary for CNN Model Architecture",model.upper(), 
+    print("\n\n*** Results Summary for CNN Model Architecture",model.arch.upper(), 
           "***")
     print("{:20}: {:3d}".format('N Images', results_stats_dic['n_images']))
     print("{:20}: {:3d}".format('N Dog Images', results_stats_dic['n_dogs_img']))
@@ -71,7 +71,7 @@ def print_results(results_dic, results_stats_dic, model,
     print(" ")
     for key in results_stats_dic:
         if key[0] == "p":
-            print("{} : {:3d}".format(key, results_stats_dic[key]))
+            print("{} : {:3f}".format(key, results_stats_dic[key]))
     if (print_incorrect_dogs and ((results_stats_dic['n_correct_dogs'] + results_stats_dic['n_correct_notdogs'])
           != results_stats_dic['n_images'] )):
         print("\nINCORRECT Dog/NOT Dog Assignments:")
