@@ -77,7 +77,7 @@ def print_results(results_dic, results_stats_dic, model,
         print("\nINCORRECT Dog/NOT Dog Assignments:")
         for key in results_dic:
             if results_dic[key][3] != results_dic[key][4]:
-                print(f"{results_dic[key][3]} is a mismatch to {results_dic[key][4]}")
+                print(f"Pet Image Label: {results_dic[key][0]} is a mismatch to Classifier Label: {results_dic[key][1]}")
 
     # IF print_incorrect_breed == True AND there were dogs whose breeds 
     # were incorrectly classified - print out these cases                    
